@@ -15,6 +15,7 @@ def main_menu():
     return get_int_input(">>> ")
 
 def main():
+    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
     choice = main_menu()
     CPUScheduler = None
 

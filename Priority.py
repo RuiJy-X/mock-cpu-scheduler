@@ -138,7 +138,7 @@ class Priority(CPUScheduler):
                 end = new_time
                 duration = end - start
                 
-                self.gantt.append({"process_name": "IDLE", "start":start,"end": end,"duration": duration,"arrival_time":process_arrival_time,"priority":process_priority})
+                self.gantt.append({"process_name": "IDLE", "start":start,"end": end,"duration": duration,"arrival_time":0,"priority":0})
                 
                 burst_time = new_time
                 self.insert_ready(burst_time)
@@ -326,7 +326,7 @@ class Priority(CPUScheduler):
         
 def main():
     pr = Priority()
-    pr.input_process(2,0,5)
+    pr.input_process(2,1,5)
     pr.input_process(3,1,4)
     pr.input_process(1,2,4)
     pr.input_process(2,3,2)

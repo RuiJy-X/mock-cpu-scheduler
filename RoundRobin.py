@@ -141,7 +141,7 @@ class RoundRobin(CPUScheduler):
                 end = new_time
                 duration = end - start
                 
-                self.gantt.append({"process_name": "IDLE", "start":start,"end": end,"duration": duration,"arrival_time":process_arrival_time})
+                self.gantt.append({"process_name": "IDLE", "start":start,"end": end,"duration": duration,"arrival_time":0})
                 
                 burst_time = new_time
                 self.insert_ready(burst_time)
@@ -328,7 +328,7 @@ class RoundRobin(CPUScheduler):
         
 def main():
     rr = RoundRobin(time_quantum=2)
-    rr.input_process(4,0)
+    rr.input_process(4,1)
     rr.input_process(2,2)
     rr.input_process(5,4)
     rr.input_process(3,1)
