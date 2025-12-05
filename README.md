@@ -1,8 +1,6 @@
 # Round Robin and Priority CPU Scheduler Simulator
 
-## Made by: Rujz Jeamar P. Bernaldez
-
-## Cristeto Turiano
+## Made by: Rujz Jeamar P. Bernaldez & Cristeto Turiano
 
 ## Description
 
